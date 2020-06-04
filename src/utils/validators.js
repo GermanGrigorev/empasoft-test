@@ -17,10 +17,10 @@ export const maxLength30 = maxLengthCreator(30);
 
 export const userNamePattern = (value) => {
     if (/^[\w.@+-]+$/.test(value)) return undefined;
-    return 'illegal character';
+    return 'Illegal character. Letters, digits and @/./+/-/_ only!';
 };
 
 export const passwordPattern = (value) => {
     if (/^(?=.*[A-Z])(?=.*\d).{8,}$/.test(value)) return undefined;
-    return 'illegal character';
+    return 'Password should be 8+ characters, 1 capital, 1 numeric';
 };

@@ -11,6 +11,17 @@
     border: 1px solid red;
     padding: 5px;
     color: indianred;
+    width: 30%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+@media (max-width: 992px) {
+    .FormError-GlobalError {
+        font-size: 20px;
+        margin: auto;
+        width: 240px;
+        margin-bottom: 15px;
+    }
 }
 
 .Form-Input {

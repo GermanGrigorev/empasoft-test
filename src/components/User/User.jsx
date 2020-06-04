@@ -12,7 +12,6 @@ import {
 import UserForm from "./UserForm/UserForm";
 import {getIsAuth} from "../../redux/authSelectors";
 import {changeUser, createUser, setEditMode} from "../../redux/userReducer";
-import './User.css'
 
 const User = (props) => {
     const onUserFormSubmit = (formData) => {
