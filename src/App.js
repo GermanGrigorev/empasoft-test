@@ -10,11 +10,15 @@ function App() {
     return (
         <HashRouter>
             <Provider store={store}>
-                <Switch>
-                    <Redirect exact from='/' to='/login' />
-                    <Route path='/login' render={() => <Login/>} />
-                    <Route path='/user' render={() => <User/>} />
-                </Switch>
+                <div className='App'>
+                    <div className='Container'>
+                        <Switch>
+                            <Redirect exact from='/' to='/login'/>
+                            <Route path='/login' render={() => <Login/>}/>
+                            <Route path='/user' render={() => <User/>}/>
+                        </Switch>
+                    </div>
+                </div>
             </Provider>
         </HashRouter>
     );

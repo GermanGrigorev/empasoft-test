@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3aeda5d8-fac3-4891-998f-71eae4ccb76e" name="Default Changelist" comment="added UserForm validation">
+    <list default="true" id="3aeda5d8-fac3-4891-998f-71eae4ccb76e" name="Default Changelist" comment="deployment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/User.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/userReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/userSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/userSelectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/FormElements.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/FormElements.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +54,18 @@
       <recent name="D:\Redact\emphasoft\src\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="npm.deploy">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -71,6 +78,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -82,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591258608367</updated>
-      <workItem from="1591258610636" duration="38488000" />
+      <workItem from="1591258610636" duration="39885000" />
     </task>
     <task id="LOCAL-00001" summary="added Login page">
       <created>1591265933135</created>
@@ -119,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591299503975</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added UserForm async validation">
+      <created>1591301913726</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591301913726</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,29 +161,30 @@
     <MESSAGE value="added User screen" />
     <MESSAGE value="added UserForm" />
     <MESSAGE value="added UserForm validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added UserForm validation" />
+    <MESSAGE value="added UserForm async validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added UserForm async validation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="6" y="0" key="CommitChangelistDialog2" timestamp="1591301889190">
+    <state x="6" y="0" key="CommitChangelistDialog2" timestamp="1591303416122">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="6" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591301889190" />
-    <state width="721" height="209" key="GridCell.Tab.0.bottom" timestamp="1591299482789">
+    <state x="6" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591303416122" />
+    <state width="721" height="209" key="GridCell.Tab.0.bottom" timestamp="1591303194218">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="721" height="209" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591299482789" />
-    <state width="721" height="209" key="GridCell.Tab.0.center" timestamp="1591299482789">
+    <state width="721" height="209" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591303194218" />
+    <state width="721" height="209" key="GridCell.Tab.0.center" timestamp="1591303194218">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="721" height="209" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591299482789" />
-    <state width="721" height="209" key="GridCell.Tab.0.left" timestamp="1591299482788">
+    <state width="721" height="209" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591303194218" />
+    <state width="721" height="209" key="GridCell.Tab.0.left" timestamp="1591303194218">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="721" height="209" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591299482788" />
-    <state width="721" height="209" key="GridCell.Tab.0.right" timestamp="1591299482789">
+    <state width="721" height="209" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591303194218" />
+    <state width="721" height="209" key="GridCell.Tab.0.right" timestamp="1591303194218">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="721" height="209" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591299482789" />
+    <state width="721" height="209" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591303194218" />
     <state x="8" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591286587070">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
