@@ -1,4 +1,5 @@
 import {authApi} from "../api/api";
+import {stopSubmit} from "redux-form";
 
 const SET_AUTH_DATA = 'emphasoft-test/auth/SET_AUTH_DATA';
 
@@ -27,6 +28,8 @@ export const authorizeUser = (userName, password) => {
         const isAuthSuccess = await authApi.getAuthToken(userName, password);
         if (isAuthSuccess) {
             dispatch(setAuthData(userName));
+        } else {
+            dispatch(stopSubmit('login', {_error: 'Incorrect login or password'}))
         }
     }
 };

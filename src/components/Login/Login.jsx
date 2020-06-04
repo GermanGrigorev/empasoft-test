@@ -10,13 +10,16 @@ const Login = (props) => {
 
     return (
         <div>
+            <h1>Login</h1>
             <LoginForm
                 onSubmit={onLoginFormSubmit}
             />
-            is Auth{props.isAuth ? ' true' : ' false'}
+            <p>Username: test_super</p>
+            <p>Password: {'Nf<U4f<rDbtDxAPn'}</p>
         </div>
     )
 };
+
 
 const mapStateToProps = (state) => {
     return {
