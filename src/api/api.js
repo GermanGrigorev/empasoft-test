@@ -8,16 +8,58 @@ let axiosInstance = axios.create({
 });
 
 export const authApi = {
-    async getAuthToken(username, password) {
+    getAuthToken(username, password) {
         const data = {username, password};
-        try {
-            const response = await axiosInstance.post('/api-token-auth/', data);
-            axiosInstance.defaults.headers.common['Authorization'] = `Token ${response.data.token}`;
-            return true;
-        } catch (e) {
-            return false;
-        }
+        return axiosInstance.post('/api-token-auth/', data)
+            .then(response => {
+                axiosInstance.defaults.headers.common['Authorization'] = `Token ${response.data.token}`;
+                return true;
+            })
+            .catch(error => {
+                return false;
+            })
     },
+};
+
+export const usersApi = {
+    createUser(userName, firstName, lastName, password, isActive) {
+        return axiosInstance.post('/api/v1/users/', {
+            username: userName,
+            first_name: firstName,
+            last_name: lastName,
+            is_active: isActive,
+            password,
+        }).then(response => {
+            return {
+                resultCode: 0,
+                data: response.data,
+            };
+        }).catch(error => {
+            return {
+                resultCode: 1,
+                data: error.response,
+            };
+        })
+    },
+    updateUser(userId, userName, firstName, lastName, password, isActive) {
+        return axiosInstance.put(`/api/v1/users/${userId}`, {
+            username: userName,
+            first_name: firstName,
+            last_name: lastName,
+            is_active: isActive,
+            password,
+        }).then(response => {
+            return {
+                resultCode: 0,
+                data: response.data
+            }
+        }).catch(error => {
+            return {
+                resultCode: 1,
+                data: error.response,
+            };
+        })
+    }
 };
 
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import {Field, reduxForm} from 'redux-form';
 import './LoginForm.css'
+import {required} from "../../../utils/validators";
+import {Input} from "../../../utils/FormElements";
 
 const LoginForm = (props) => {
     return (
@@ -33,23 +35,6 @@ const LoginForm = (props) => {
             </div>
         </form>
     )
-};
-
-const Input = ({input, meta, ...props}) => {
-    const inputClassName = meta.touched && meta.error ? 'FormError-Input' : null;
-    return (
-        <>
-            <input {...input}{...props} className={inputClassName}/>
-            {meta.touched && meta.error && (
-                <span className='FormError-Text'>{meta.error}</span>
-            )}
-        </>
-    )
-};
-
-const required = (value) => {
-    if (value) return undefined;
-    return 'Field is required'
 };
 
 export default reduxForm({form: 'login'})(LoginForm);
