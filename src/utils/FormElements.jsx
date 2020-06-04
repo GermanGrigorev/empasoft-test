@@ -7,7 +7,7 @@ export const Input = ({input, meta, ...props}) => {
         <>
             <input {...input}{...props} className={inputClassName}/>
             {meta.touched && meta.error && (
-                <span className='FormError-Text'>{meta.error}</span>
+                <div className='FormError-Text'>{meta.error}</div>
             )}
         </>
     )

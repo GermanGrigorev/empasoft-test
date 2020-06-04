@@ -1,10 +1,17 @@
-import React, {useState} from "react";
+import React from "react";
 import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
-import {getFirstName, getLastName, getUserId, getUserName, getIsUserCreated} from "../../redux/userSelectors";
+import {
+    getFirstName,
+    getLastName,
+    getUserId,
+    getUserName,
+    getIsUserCreated,
+    getEditMode
+} from "../../redux/userSelectors";
 import UserForm from "./UserForm/UserForm";
 import {getIsAuth} from "../../redux/authSelectors";
-import {changeUser, createUser} from "../../redux/userReducer";
+import {changeUser, createUser, setEditMode} from "../../redux/userReducer";
 
 const User = (props) => {
     const onUserFormSubmit = (formData) => {
@@ -13,11 +20,7 @@ const User = (props) => {
         } else {
             props.createUser(formData.userName, formData.firstName, formData.lastName, formData.password)
         }
-
-        setEditMode(false);
     };
-
-    const [editMode, setEditMode] = useState(false);
 
     if (!props.isAuth) {
         return (
@@ -26,7 +29,7 @@ const User = (props) => {
     }
     return (
         <div>
-            {!editMode && (
+            {!props.editMode && (
                 <div>
                     {props.isUserCreated && (
                         <div>
@@ -35,12 +38,12 @@ const User = (props) => {
                             <p>Last name: {props.lastName}</p>
                         </div>
                     )}
-                    <button onClick={() => setEditMode(true)}>
+                    <button onClick={() => props.setEditMode(true)}>
                         {props.isUserCreated ? 'Change User' : 'Create User'}
                     </button>
                 </div>
             )}
-            {editMode && (
+            {props.editMode && (
                 <UserForm onSubmit={onUserFormSubmit}/>
             )}
         </div>
@@ -55,10 +58,12 @@ const mapStateToProps = (state) => {
         userName: getUserName(state),
         firstName: getFirstName(state),
         lastName: getLastName(state),
+        editMode: getEditMode(state),
     }
 };
 
 export default connect(mapStateToProps, {
     changeUser,
     createUser,
+    setEditMode,
 })(User);

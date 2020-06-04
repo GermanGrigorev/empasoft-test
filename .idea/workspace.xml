@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3aeda5d8-fac3-4891-998f-71eae4ccb76e" name="Default Changelist" comment="">
+    <list default="true" id="3aeda5d8-fac3-4891-998f-71eae4ccb76e" name="Default Changelist" comment="added UserForm validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/UserForm/UserForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/UserForm/UserForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/User/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/User.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/userReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/userSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/userSelectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/FormElements.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/FormElements.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591258608367</updated>
-      <workItem from="1591258610636" duration="35931000" />
+      <workItem from="1591258610636" duration="38488000" />
     </task>
     <task id="LOCAL-00001" summary="added Login page">
       <created>1591265933135</created>
@@ -108,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591294152496</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added UserForm validation">
+      <created>1591299503975</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591299503975</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,13 +141,14 @@
     <MESSAGE value="added Login Form validation" />
     <MESSAGE value="added User screen" />
     <MESSAGE value="added UserForm" />
-    <option name="LAST_COMMIT_MESSAGE" value="added UserForm" />
+    <MESSAGE value="added UserForm validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added UserForm validation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="6" y="0" key="CommitChangelistDialog2" timestamp="1591294151851">
+    <state x="6" y="0" key="CommitChangelistDialog2" timestamp="1591301889190">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="6" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591294151851" />
+    <state x="6" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591301889190" />
     <state width="721" height="209" key="GridCell.Tab.0.bottom" timestamp="1591299482789">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

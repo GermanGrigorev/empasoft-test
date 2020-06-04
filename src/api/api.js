@@ -37,7 +37,7 @@ export const userApi = {
         }).catch(error => {
             return {
                 resultCode: 1,
-                data: error.response,
+                data: error.response.data,
             };
         })
     },
@@ -57,7 +57,7 @@ export const userApi = {
             console.log(error.response);
             return {
                 resultCode: 1,
-                data: error.response,
+                data: error.response.data,
             };
         })
     }
