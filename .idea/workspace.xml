@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3aeda5d8-fac3-4891-998f-71eae4ccb76e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/User/User.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/User/UserForm/UserForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/userReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/userSelectors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/FormElements.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/FormElemets.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/validators.js" afterDir="false" />
+    <list default="true" id="3aeda5d8-fac3-4891-998f-71eae4ccb76e" name="Default Changelist" comment="added UserForm">
+      <change afterPath="$PROJECT_DIR$/src/redux/authSelectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/User/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/User.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/userReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/userSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/userSelectors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -88,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591258608367</updated>
-      <workItem from="1591258610636" duration="24768000" />
+      <workItem from="1591258610636" duration="32701000" />
     </task>
     <task id="LOCAL-00001" summary="added Login page">
       <created>1591265933135</created>
@@ -104,41 +96,61 @@
       <option name="project" value="LOCAL" />
       <updated>1591277924804</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added User screen">
+      <created>1591286272261</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591286272261</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added Login page" />
     <MESSAGE value="added Login Form validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Login Form validation" />
+    <MESSAGE value="added User screen" />
+    <MESSAGE value="added UserForm" />
+    <option name="LAST_COMMIT_MESSAGE" value="added UserForm" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="6" y="0" key="CommitChangelistDialog2" timestamp="1591277924194">
+    <state x="6" y="0" key="CommitChangelistDialog2" timestamp="1591294087537">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="6" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591277924194" />
-    <state width="734" height="68" key="GridCell.Tab.0.bottom" timestamp="1591265936318">
+    <state x="6" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591294087537" />
+    <state width="721" height="184" key="GridCell.Tab.0.bottom" timestamp="1591294051212">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="734" height="68" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591265936318" />
-    <state width="734" height="68" key="GridCell.Tab.0.center" timestamp="1591265936318">
+    <state width="721" height="184" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591294051212" />
+    <state width="721" height="184" key="GridCell.Tab.0.center" timestamp="1591294051211">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="734" height="68" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591265936318" />
-    <state width="734" height="68" key="GridCell.Tab.0.left" timestamp="1591265936318">
+    <state width="721" height="184" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591294051211" />
+    <state width="721" height="184" key="GridCell.Tab.0.left" timestamp="1591294051211">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="734" height="68" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591265936318" />
-    <state width="734" height="68" key="GridCell.Tab.0.right" timestamp="1591265936318">
+    <state width="721" height="184" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591294051211" />
+    <state width="721" height="184" key="GridCell.Tab.0.right" timestamp="1591294051211">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="734" height="68" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591265936318" />
-    <state x="8" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591280450710">
+    <state width="721" height="184" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591294051211" />
+    <state x="8" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591286587070">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="8" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591280450710" />
+    <state x="8" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591286587070" />
   </component>
 </project>

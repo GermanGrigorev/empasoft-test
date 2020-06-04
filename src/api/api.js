@@ -21,14 +21,14 @@ export const authApi = {
     },
 };
 
-export const usersApi = {
-    createUser(userName, firstName, lastName, password, isActive) {
+export const userApi = {
+    createUser(userData) {
         return axiosInstance.post('/api/v1/users/', {
-            username: userName,
-            first_name: firstName,
-            last_name: lastName,
-            is_active: isActive,
-            password,
+            username: userData.userName,
+            first_name: userData.firstName,
+            last_name: userData.lastName,
+            is_active: userData.isActive,
+            password: userData.password,
         }).then(response => {
             return {
                 resultCode: 0,
@@ -41,13 +41,13 @@ export const usersApi = {
             };
         })
     },
-    updateUser(userId, userName, firstName, lastName, password, isActive) {
-        return axiosInstance.put(`/api/v1/users/${userId}`, {
-            username: userName,
-            first_name: firstName,
-            last_name: lastName,
-            is_active: isActive,
-            password,
+    updateUser(userData) {
+        return axiosInstance.put(`/api/v1/users/${userData.userId}`, {
+            username: userData.userName,
+            first_name: userData.firstName,
+            last_name: userData.lastName,
+            is_active: userData.isActive,
+            password: userData.password,
         }).then(response => {
             return {
                 resultCode: 0,

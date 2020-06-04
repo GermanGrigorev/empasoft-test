@@ -1,15 +1,23 @@
 import React, {useState} from "react";
 import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
-import {isUserCreated} from "../../redux/userSelectors";
+import {getFirstName, getLastName, getUserId, getUserName, getIsUserCreated} from "../../redux/userSelectors";
 import UserForm from "./UserForm/UserForm";
+import {getIsAuth} from "../../redux/authSelectors";
+import {changeUser, createUser} from "../../redux/userReducer";
 
 const User = (props) => {
-    const [editMode, setEditMode] = useState(true);
-
     const onUserFormSubmit = (formData) => {
+        if (props.isUserCreated) {
+            props.changeUser(props.userId, formData.userName, formData.firstName, formData.lastName, formData.password);
+        } else {
+            props.createUser(formData.userName, formData.firstName, formData.lastName, formData.password)
+        }
+
         setEditMode(false);
     };
+
+    const [editMode, setEditMode] = useState(false);
 
     if (!props.isAuth) {
         return (
@@ -22,9 +30,9 @@ const User = (props) => {
                 <div>
                     {props.isUserCreated && (
                         <div>
-                            username: {props.userName}
-                            First name: {props.firstName}
-                            Last name: {props.lastName}
+                            <p>username: {props.userName}</p>
+                            <p>First name: {props.firstName}</p>
+                            <p>Last name: {props.lastName}</p>
                         </div>
                     )}
                     <button onClick={() => setEditMode(true)}>
@@ -41,13 +49,16 @@ const User = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        isAuth: state.auth.isAuth,
-        isUserCreated: isUserCreated(state),
-        userId: state.user.userId,
-        userName: state.user.userName,
-        firstName: state.user.firstName,
-        lastName: state.user.lastName,
+        isAuth: getIsAuth(state),
+        isUserCreated: getIsUserCreated(state),
+        userId: getUserId(state),
+        userName: getUserName(state),
+        firstName: getFirstName(state),
+        lastName: getLastName(state),
     }
 };
 
-export default connect(mapStateToProps, {})(User);
+export default connect(mapStateToProps, {
+    changeUser,
+    createUser,
+})(User);
