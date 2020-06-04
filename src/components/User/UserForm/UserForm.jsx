@@ -17,7 +17,7 @@ const UserForm = (props) => {
         <form onSubmit={props.handleSubmit}>
             <div>
                 <Field
-                    placeholder='username'
+                    placeholder='Username'
                     name='userName'
                     type='text'
                     component={Input}
@@ -57,7 +57,7 @@ const UserForm = (props) => {
                 </div>
             )}
             <div>
-                <button>Save changes</button>
+                <button className='Form-Button'>Save changes</button>
             </div>
         </form>
     )

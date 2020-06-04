@@ -12,6 +12,7 @@ import {
 import UserForm from "./UserForm/UserForm";
 import {getIsAuth} from "../../redux/authSelectors";
 import {changeUser, createUser, setEditMode} from "../../redux/userReducer";
+import './User.css'
 
 const User = (props) => {
     const onUserFormSubmit = (formData) => {
@@ -28,7 +29,8 @@ const User = (props) => {
         )
     }
     return (
-        <div>
+        <div className='User'>
+            <h1>User</h1>
             {!props.editMode && (
                 <div>
                     {props.isUserCreated && (
@@ -38,7 +40,10 @@ const User = (props) => {
                             <p>Last name: {props.lastName}</p>
                         </div>
                     )}
-                    <button onClick={() => props.setEditMode(true)}>
+                    <button
+                        className='Form-Button'
+                        onClick={() => props.setEditMode(true)}
+                    >
                         {props.isUserCreated ? 'Change User' : 'Create User'}
                     </button>
                 </div>

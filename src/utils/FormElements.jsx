@@ -2,7 +2,7 @@ import React from "react";
 import './FormElemets.css'
 
 export const Input = ({input, meta, ...props}) => {
-    const inputClassName = meta.touched && meta.error ? 'FormError-Input' : null;
+    const inputClassName = 'Form-Input' + (meta.touched && meta.error ? ' FormError-Input' : '');
     return (
         <>
             <input {...input}{...props} className={inputClassName}/>

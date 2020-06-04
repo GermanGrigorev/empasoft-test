@@ -4,10 +4,37 @@
 
 .FormError-Text {
     color: red;
+    padding: 5px;
 }
 
 .FormError-GlobalError {
     border: 1px solid red;
     padding: 5px;
     color: indianred;
+}
+
+.Form-Input {
+    box-sizing: border-box;
+    width: 30%;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 992px) {
+    .Form-Input {
+        font-size: 20px;
+        width: 240px;
+        margin-bottom: 15px;
+    }
+}
+
+.Form-Button {
+    width: 30%;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 992px) {
+    .Form-Button {
+        font-size: 20px;
+        width: 240px;
+    }
 }

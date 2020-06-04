@@ -1,12 +1,14 @@
 import React from 'react';
 import {Field, reduxForm} from 'redux-form';
-import './LoginForm.css'
 import {required} from "../../../utils/validators";
 import {Input} from "../../../utils/FormElements";
 
 const LoginForm = (props) => {
     return (
-        <form onSubmit={props.handleSubmit}>
+        <form
+            className='Form'
+            onSubmit={props.handleSubmit}
+        >
             <div>
                 <Field
                     placeholder='Login'
@@ -31,7 +33,7 @@ const LoginForm = (props) => {
                 </div>
             )}
             <div>
-                <button>submit</button>
+                <button className='Form-Button'>submit</button>
             </div>
         </form>
     )

@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aeda5d8-fac3-4891-998f-71eae4ccb76e" name="Default Changelist" comment="deployment">
+      <change afterPath="$PROJECT_DIR$/src/components/User/User.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/User/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/User.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/User/UserForm/UserForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/UserForm/UserForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/FormElements.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/FormElements.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/FormElemets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/FormElemets.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -94,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591258608367</updated>
-      <workItem from="1591258610636" duration="39885000" />
+      <workItem from="1591258610636" duration="43678000" />
     </task>
     <task id="LOCAL-00001" summary="added Login page">
       <created>1591265933135</created>
@@ -138,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591301913726</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="deployment">
+      <created>1591303724201</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591303724201</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,29 +173,34 @@
     <MESSAGE value="added UserForm" />
     <MESSAGE value="added UserForm validation" />
     <MESSAGE value="added UserForm async validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added UserForm async validation" />
+    <MESSAGE value="deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="deployment" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="6" y="0" key="CommitChangelistDialog2" timestamp="1591303416122">
+    <state x="113" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591305752764">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="6" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591303416122" />
-    <state width="721" height="209" key="GridCell.Tab.0.bottom" timestamp="1591303194218">
+    <state x="113" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591305752764" />
+    <state x="6" y="0" key="CommitChangelistDialog2" timestamp="1591304603640">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="721" height="209" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591303194218" />
-    <state width="721" height="209" key="GridCell.Tab.0.center" timestamp="1591303194218">
+    <state x="6" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591304603640" />
+    <state width="721" height="154" key="GridCell.Tab.0.bottom" timestamp="1591307503376">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="721" height="209" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591303194218" />
-    <state width="721" height="209" key="GridCell.Tab.0.left" timestamp="1591303194218">
+    <state width="721" height="154" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591307503376" />
+    <state width="721" height="154" key="GridCell.Tab.0.center" timestamp="1591307503376">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="721" height="209" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591303194218" />
-    <state width="721" height="209" key="GridCell.Tab.0.right" timestamp="1591303194218">
+    <state width="721" height="154" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591307503376" />
+    <state width="721" height="154" key="GridCell.Tab.0.left" timestamp="1591307503376">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="721" height="209" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591303194218" />
+    <state width="721" height="154" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591307503376" />
+    <state width="721" height="154" key="GridCell.Tab.0.right" timestamp="1591307503376">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="721" height="154" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591307503376" />
     <state x="8" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591286587070">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
