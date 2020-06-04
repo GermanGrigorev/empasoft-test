@@ -1,7 +1,16 @@
 import React from "react";
 import {Field, reduxForm} from "redux-form";
 import {Input} from "../../../utils/FormElements";
-import {required} from "../../../utils/validators";
+import {
+    maxLength128,
+    maxLength150,
+    maxLength30,
+    passwordPattern,
+    required,
+    userNamePattern
+} from "../../../utils/validators";
+import {compose} from "redux";
+import {connect} from "react-redux";
 
 const UserForm = (props) => {
     return (
@@ -12,7 +21,7 @@ const UserForm = (props) => {
                     name='userName'
                     type='text'
                     component={Input}
-                    validate={[required]}
+                    validate={[required, userNamePattern, maxLength150,]}
                 />
             </div>
             <div>
@@ -21,7 +30,7 @@ const UserForm = (props) => {
                     name='firstName'
                     type='text'
                     component={Input}
-                    validate={[required]}
+                    validate={[maxLength30]}
                 />
             </div>
             <div>
@@ -30,7 +39,7 @@ const UserForm = (props) => {
                     name='lastName'
                     type='text'
                     component={Input}
-                    validate={[required]}
+                    validate={[maxLength150]}
                 />
             </div>
             <div>
@@ -39,7 +48,7 @@ const UserForm = (props) => {
                     name='password'
                     type='password'
                     component={Input}
-                    validate={[required]}
+                    validate={[required, maxLength128, passwordPattern]}
                 />
             </div>
             {props.error && (
@@ -54,4 +63,9 @@ const UserForm = (props) => {
     )
 };
 
-export default reduxForm({form: 'user'})(UserForm);
+export default compose(
+    connect(state => ({
+        initialValues: state.user
+    }), {}),
+    reduxForm({form: 'user'}),
+)(UserForm);

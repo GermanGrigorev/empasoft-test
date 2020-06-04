@@ -42,7 +42,7 @@ export const userApi = {
         })
     },
     updateUser(userData) {
-        return axiosInstance.put(`/api/v1/users/${userData.userId}`, {
+        return axiosInstance.put(`/api/v1/users/${userData.userId}/`, {
             username: userData.userName,
             first_name: userData.firstName,
             last_name: userData.lastName,
@@ -54,6 +54,7 @@ export const userApi = {
                 data: response.data
             }
         }).catch(error => {
+            console.log(error.response);
             return {
                 resultCode: 1,
                 data: error.response,
