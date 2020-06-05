@@ -29,7 +29,7 @@ const LoginForm = (props) => {
             </div>
             {props.error && (
                 <div className="FormError-GlobalError">
-                    Incorrect login or password
+                    {props.error}
                 </div>
             )}
             <div>

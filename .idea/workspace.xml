@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3aeda5d8-fac3-4891-998f-71eae4ccb76e" name="Default Changelist" comment="added styles">
+    <list default="true" id="3aeda5d8-fac3-4891-998f-71eae4ccb76e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/User.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/User.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/UserForm/UserForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/UserForm/UserForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/FormElemets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/FormElemets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/authReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +92,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591258608367</updated>
-      <workItem from="1591258610636" duration="46013000" />
+      <workItem from="1591258610636" duration="46164000" />
+      <workItem from="1591333876920" duration="538000" />
     </task>
     <task id="LOCAL-00001" summary="added Login page">
       <created>1591265933135</created>
@@ -153,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591307631867</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="bug fixes">
+      <created>1591310434028</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591310434028</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +169,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -179,33 +186,34 @@
     <MESSAGE value="added UserForm async validation" />
     <MESSAGE value="deployment" />
     <MESSAGE value="added styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="added styles" />
+    <MESSAGE value="bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="113" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591309942656">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="113" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591309942656" />
-    <state x="6" y="0" key="CommitChangelistDialog2" timestamp="1591308495436">
+    <state x="6" y="0" key="CommitChangelistDialog2" timestamp="1591310433399">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="6" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591308495436" />
-    <state width="721" height="269" key="GridCell.Tab.0.bottom" timestamp="1591307637392">
+    <state x="6" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591310433399" />
+    <state width="1052" height="111" key="GridCell.Tab.0.bottom" timestamp="1591334418206">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="721" height="269" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591307637392" />
-    <state width="721" height="269" key="GridCell.Tab.0.center" timestamp="1591307637392">
+    <state width="1052" height="111" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591334418206" />
+    <state width="1052" height="111" key="GridCell.Tab.0.center" timestamp="1591334418205">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="721" height="269" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591307637392" />
-    <state width="721" height="269" key="GridCell.Tab.0.left" timestamp="1591307637392">
+    <state width="1052" height="111" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591334418205" />
+    <state width="1052" height="111" key="GridCell.Tab.0.left" timestamp="1591334418205">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="721" height="269" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591307637392" />
-    <state width="721" height="269" key="GridCell.Tab.0.right" timestamp="1591307637392">
+    <state width="1052" height="111" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591334418205" />
+    <state width="1052" height="111" key="GridCell.Tab.0.right" timestamp="1591334418205">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="721" height="269" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591307637392" />
+    <state width="1052" height="111" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1591334418205" />
     <state x="8" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591286587070">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

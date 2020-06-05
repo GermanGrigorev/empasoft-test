@@ -29,7 +29,7 @@ export const authorizeUser = (userName, password) => {
         if (isAuthSuccess) {
             dispatch(setAuthData(userName));
         } else {
-            dispatch(stopSubmit('login', {_error: 'Incorrect login or password'}))
+            dispatch(stopSubmit('login', {_error: 'Incorrect login or password!'}))
         }
     }
 };
