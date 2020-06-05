@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "96a5cc9b35b5f85d9fc13d51808aab36",
+    "revision": "12fef3687971e8dcca37974301d31cc5",
     "url": "/empasoft-test/index.html"
   },
   {
-    "revision": "4c531ee5da9079951229",
+    "revision": "90e0236c0ca7f776a886",
     "url": "/empasoft-test/static/css/main.f1b75b29.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/empasoft-test/static/js/2.2fbe465e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4c531ee5da9079951229",
-    "url": "/empasoft-test/static/js/main.f6f10358.chunk.js"
+    "revision": "90e0236c0ca7f776a886",
+    "url": "/empasoft-test/static/js/main.df7258e2.chunk.js"
   },
   {
     "revision": "5f7c7dc32a2ce2c883db",
